@@ -4,29 +4,29 @@ using namespace std;
 
 int main(){
 	int i;
-	CycleArrayQueue<char> que(20);                             //È±Ê¡Îª20ÔªËØ¶ÓÁĞ£¬¿ÉÓÃ19
+	CycleArrayQueue<char> que(20);                             //ç¼ºçœä¸º20å…ƒç´ é˜Ÿåˆ—ï¼Œå¯ç”¨19
 
-	char str1[]="abcdefghijklmnopqr";//19¸öÔªËØ£¬°üÀ¨´®½áÊø·û
+	char str1[]="abcdefghijklmnopqr";  //19ä¸ªå…ƒç´ ï¼ŒåŒ…æ‹¬ä¸²ç»“æŸç¬¦
 	//que.MakeEmpty();
 
 	for(i=0;i<19;i++) 
 		que.AddTail(str1[i]);
 
-	if(que.IsFull()) cout<<"¶ÓÂú";
+	if(que.IsFull()) cout<<"ï¿½ï¿½ï¿½ï¿½";
 
-	cout<<"¹²ÓĞÔªËØ£º"<<que.GetCount()<<endl;
+	cout<<"ï¿½ï¿½ï¿½ï¿½Ôªï¿½Ø£ï¿½"<<que.GetCount()<<endl;
 
 	char temp;
 
 	for(i=0;i<19;i++) 
 	{
-		que.GetHead(temp);           //ÏÈ½øÏÈ³ö
+		que.GetHead(temp);          //å…ˆè¿›å…ˆå‡º
 		cout<<temp<<' ';
 	}
 		cout<<endl;	
 
-	if(que.IsEmpty()) cout<<"¶Ó¿Õ";
-		cout<<"¹²ÓĞÔªËØ£º"<<que.GetCount()<<endl;
+	if(que.IsEmpty()) cout<<"é˜Ÿç©º";
+		cout<<"å…±æœ‰å…ƒç´ :"<<que.GetCount()<<endl;
 
 	return 0;
 }
