@@ -12,9 +12,9 @@ int main(){
 	for(i=0;i<19;i++) 
 		que.AddTail(str1[i]);
 
-	if(que.IsFull()) cout<<"����";
+	if(que.IsFull()) cout<<"队满";
 
-	cout<<"����Ԫ�أ�"<<que.GetCount()<<endl;
+	cout<<"共有元素::"<<que.GetCount()<<endl;
 
 	char temp;
 
